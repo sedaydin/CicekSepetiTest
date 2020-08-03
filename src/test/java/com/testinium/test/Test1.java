@@ -53,7 +53,7 @@ public class Test1 extends BaseTest {
 
     }
 
-    //Siteye giriş yap, ürün ara, ilk ürünü seç,sepete ekle,giriş yap,ve satın al
+    //Siteye giriş yap, ürün ara, yedinci ürünü seç,sepete ekle,giriş yap, satın al ve çıkış yap.
     @Test
     public void Test4() throws InterruptedException {
         
@@ -64,7 +64,8 @@ public class Test1 extends BaseTest {
                 .nextLogin ("seda.adin@testinium.com")
                 .nextlogin ("123456.S")
                  .buy ()
-        .buyProduct ("Seda Aydın","5066947044","Beşiktaş İskele","50669348468");
+                .buyProduct ("Seda Aydın","5066947044","Beşiktaş İskele","50669348468")
+                .log_out();
 
     }
 
@@ -92,7 +93,8 @@ public class Test1 extends BaseTest {
                 .calllogin ()
                 .login ("seda.adin@testinium.com","123456.S")
                 .account ()
-                .bilgilerim ("Seda Aydınnnn","yeni Ev adresi");
+                .bilgilerim ("Seda Aydınnnn","yeni Ev adresi")
+                .log_out();
 
     }
 
